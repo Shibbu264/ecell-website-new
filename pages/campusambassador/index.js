@@ -1,6 +1,7 @@
 import Leaderboard from "@/components/Campus ambassador/Leaderboard";
 import Profile from "@/components/Campus ambassador/Profile";
 import TaskList from "@/components/Campus ambassador/Tasks";
+import TaskList from "@/components/Campus ambassador/Tasks";
 import Nav from "@/components/navbar/NavLayout";
 import { updateLeaderboard, updateLoading, updateUser } from "@/lib/redux/slices/campusAmbassadorSlice";
 import { Loader } from "lucide-react";
@@ -8,6 +9,19 @@ import Head from "next/head";
 import React, { useState, useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux";
 
+
+const mockUserData = {
+    name: "John Doe",
+    collegeName: "IIT BHU",
+    collegeYear: "2024",
+    phone: "123-456-7890",
+    points: 1200,
+    tasks: [
+        { id: 1, title: "Get the startupjunction form filled by at least 10 people", completed: true, lastDate: "2024-10-10" },
+        { id: 2, title: "Task 2", completed: false, lastDate: "2024-10-05" },
+        { id: 3, title: "Task 3", completed: false, lastDate: "2024-10-08" },
+    ],
+};
 
 
 export default function CampusAmbassador() {
