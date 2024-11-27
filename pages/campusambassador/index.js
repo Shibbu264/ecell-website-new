@@ -1,14 +1,12 @@
 import Leaderboard from "@/components/Campus ambassador/Leaderboard";
 import Profile from "@/components/Campus ambassador/Profile";
 import TaskList from "@/components/Campus ambassador/Tasks";
-import TaskList from "@/components/Campus ambassador/Tasks";
 import Nav from "@/components/navbar/NavLayout";
 import { updateLeaderboard, updateLoading, updateUser } from "@/lib/redux/slices/campusAmbassadorSlice";
 import { Loader } from "lucide-react";
 import Head from "next/head";
 import React, { useState, useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux";
-
 
 
 
